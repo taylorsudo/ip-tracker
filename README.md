@@ -7,7 +7,6 @@ A simple tool for fetching IP addresses from web form submissions.
 3. Push the repo to GitHub and [deploy it to Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
 4. Use your Netlify URL in the below script and add it before the closing `</body>` tag on your webpage
 
-```----------
 ```html
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -43,7 +42,4 @@ document.addEventListener("DOMContentLoaded", function() {
     injectIP();
 });
 </script>
-```
-```
-```
 ```

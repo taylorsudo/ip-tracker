@@ -10,7 +10,7 @@ exports.handler = async (event, context) => {
   };
 
   // Check if the origin ends with defined domain
-  if (origin === `https://${domain}`) || origin.endsWith(`.${domain}`)) {
+  if (origin === `https://${domain}` || origin.endsWith(`.${domain}`)) {
     headers["Access-Control-Allow-Origin"] = origin;
   } else {
     // Allow local testing

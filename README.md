@@ -10,8 +10,8 @@ A simple tool for fetching IP addresses from web form submissions.
 ```html
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    // Define input field name below
-    const netlifyURL = "https://example.netlify.app/"
+    // Define variables below
+    const netlifyURL = "https://example.netlify.app/.netlify/functions/get-ip"
     const inputName = "IP address";
 
     async function injectIP() {
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Wait a moment for webpage to render
             setTimeout(() => {
                 // Find input field by label name (case sensitive)
-                const inputField = document.querySelector('input[name="${inputName}"]');
+                const inputField = document.querySelector(`input[name="${inputName}"]`);
 
                 if (inputField) {
                     inputField.value = visitorIP;
